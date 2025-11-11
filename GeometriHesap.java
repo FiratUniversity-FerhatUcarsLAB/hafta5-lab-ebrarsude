@@ -1,7 +1,7 @@
 /*
- * Ad Soyad: [ADINIZI BURAYA YAZIN]
- * Ogrenci No: [OGRENCI NUMARANIZI BURAYA YAZIN]
- * Tarih: [TARIHI BURAYA YAZIN]
+ * Ad Soyad: Ebrar Sude Yıldırım
+ * Ogrenci No: 250541104
+ * Tarih: 11.11.2025
  * Aciklama: Gorev 1 - Geometrik Sekil Hesaplayici
  * 
  * Bu program temel geometrik sekillerin alan ve
@@ -16,28 +16,28 @@ public class GeometriHesap {
     public static double calculateSquareArea(double side) {
         // Alan = kenar * kenar
         
-        return 0.0; // Degistirin
+        return side * side;
     }
     
     // METOT 2: Kare cevresi
     public static double calculateSquarePerimeter(double side) {
         // Cevre = 4 * kenar
         
-        return 0.0; // Degistirin
+        return 4 * side;
     }
     
     // METOT 3: Dikdortgen alani
     public static double calculateRectangleArea(double width, double height) {
         // Alan = genislik * yukseklik
         
-        return 0.0; // Degistirin
+        return width * height;
     }
     
     // METOT 4: Dikdortgen cevresi
     public static double calculateRectanglePerimeter(double width, double height) {
         // Cevre = 2 * (genislik + yukseklik)
         
-        return 0.0; // Degistirin
+        return 2 * (width + height);
     }
     
     // METOT 5: Daire alani
@@ -45,28 +45,28 @@ public class GeometriHesap {
         // Alan = PI * r * r
         // Math.PI kullanabilirsiniz
         
-        return 0.0; // Degistirin
+        return Math.PI * radius * radius;
     }
     
     // METOT 6: Daire cevresi
     public static double calculateCircleCircumference(double radius) {
         // Cevre = 2 * PI * r
         
-        return 0.0; // Degistirin
+        return 2 * Math.PI * radius;
     }
     
     // METOT 7: Ucgen alani (taban ve yukseklik ile)
     public static double calculateTriangleArea(double base, double height) {
         // Alan = (taban * yukseklik) / 2
         
-        return 0.0; // Degistirin
+        return (base * height) / 2;
     }
     
     // METOT 8: Ucgen cevresi
     public static double calculateTrianglePerimeter(double a, double b, double c) {
         // Cevre = a + b + c
         
-        return 0.0; // Degistirin
+        return  a + b + c;
     }
     
     public static void main(String[] args) {
@@ -107,17 +107,22 @@ public class GeometriHesap {
         
         // HESAPLAMALARI YAP - Metotlari cagir
         
+        double squareArea = calculateSquareArea(squareSide);
+        double squarePerimeter = calculateSquarePerimeter(squareSide);
+        
+        double rectArea = calculateRectangleArea(rectWidth, rectHeight);
+        double rectPerimeter = calculateRectanglePerimeter(rectWidth, rectHeight);
+        
+        double circleArea = calculateCircleArea(radius);
+        double circleCircumference = calculateCircleCircumference(radius);
+        
+        double triangleArea = calculateTriangleArea(base, height);
+        double trianglePerimeter = calculateTrianglePerimeter(side1, side2, side3);
         
         
         
         
-        
-        
-        
-        
-        
-        
-        // SONUCLARI YAZDIR
+         // SONUCLARI YAZDIR
         System.out.println("\n========================================");
         System.out.println("         HESAPLAMA SONUCLARI");
         System.out.println("========================================");
